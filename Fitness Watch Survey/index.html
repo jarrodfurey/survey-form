@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="styles.css" />
+<h1 id="title">Fitness Watch Preference Form</h1>
+<p id="description">This survey will help us choose our new watch features</p>
+<form id="survey-form"> 
+  <label id="name-label" for="name">Name:</label>
+  <input id="name" type="text" name="name" placeholder="Wagner Waggins" required />
+  <label id="email-label" for="email">Email:</label>
+  <input id="email" type="email" name="email" placeholder="wagner@gmail.com" required />
+  <label id="number-label" for="number">Age:</label>
+  <input id="number" type="number" name="number" min="18" max="99" placeholder="99" required />
+  <label for="dropdown">Which watch do you currently use?
+ <select id="dropdown" name="dropdown">What watch do you currently use?
+   <option value="">(select one)</option>
+   <option value="1">Garmin</option>
+   <option value="2">Coros</option>
+   <option value="3">Apple</option>
+    <option value="4">Other</option>
+ </select>
+ <p>What is your primary sport?</p>
+ <label for="running">
+   <input type="radio" id="running" name="sport" value="running" required /> Running
+ </label>
+ <label for="swimming">
+   <input type="radio" id="swimming" name="sport" value="swimming" required /> Swimming
+ </label>
+ <p>What features do you care about most?</p>
+ <label for="features-HRM">
+   <input type="checkbox" id="features-HRM" name="features" value="HR Monitoring" />HR Monitoring
+ </label>
+  <label for="features-HRV">
+   <input type="checkbox" id="features-HRV" name="features" value="HRV Monitoring" />HRV Monitoring
+ </label>
+ <label for="features-sleep">
+   <input type="checkbox" id="features-sleep" name="features" value="Sleep Tracking" />Sleep Tracking
+ </label>
+<label>What other features would you like to see in a fitness watch?</label> <textarea></textarea>
+<button id="submit" type="submit">Submit</button>
+  </form>
+
